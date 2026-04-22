@@ -1,0 +1,6 @@
+Git команды:
+git init -
+git add -
+git commit -
+git branch -
+git checkout -
