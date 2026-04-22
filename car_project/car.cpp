@@ -20,6 +20,11 @@ double powerToKW(int hp) {
     return hp * 0.735;
 }
 
+int calculateTax(int hp) {
+    return hp * 10;
+}
+
+
 int main() {
     setlocale(LC_ALL, "Ru");
     Car myCar;
@@ -29,6 +34,6 @@ int main() {
     myCar.horsepower = 106;
 
     myCar.printInfo();
-
+    cout << "Примерный транспортный налог: " << calculateTax(myCar.horsepower) << " руб." << endl;
     cout << "Мощность в киловаттах: " << powerToKW(myCar.horsepower) << " кВт" << endl;
 }
